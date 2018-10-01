@@ -10,14 +10,15 @@
     <link href="bootstrap-4.0.0.css" rel="stylesheet">
 	  
 	<link href="css/styles.css" rel="stylesheet">
-
+	<link href="https://fonts.googleapis.com/css?family=Raleway:300,400" rel="stylesheet">
+	  
   </head>
   <body>
 	<div class="row">
 		<div class="col"></div>
 		<div class="col-8">
 			<nav class="navbar navbar-expand-lg navbar-dark">
-				<a class="navbar-brand bg-dark" href="#">Nordlið</a>
+				<p class="brandname">Nordlið</p>
     		</nav>	
 		</div>
 		<div class="col"></div>
@@ -50,37 +51,38 @@
 	<section>
     <div class="container">
        <div class="row text-center">
-          <div class="col-lg-12">Lorem ipsum dolor sit amet, semper diam commodo porttitor lectus eleifend, tellus et fermentum a, non phasellus turpis vitae. Risus gravida tortor velit nibh, donec nulla natus fermentum quam sed mauris, magna ipsum eu rhoncus in turpis consectetuer, pede ipsum viverra nec. Sem urna ut at orci, pellentesque nulla et maecenas et. Vel vitae vestibulum, pede elit purus vel. Neque vel proin quisquam molestie volutpat sit, pellentesque erat proin laoreet, a ut in. Lobortis donec volutpat, fames vehicula risus eros tellus, ipsum in. Integer scelerisque a dolor elit felis. </div>
+          <div class="col-lg-12"><h3>Lorem ipsum dolor sit amet, semper diam commodo porttitor lectus eleifend, tellus et fermentum a, non phasellus turpis vitae. Risus gravida tortor velit nibh, donec nulla natus fermentum quam sed mauris, magna ipsum eu rhoncus in turpis consectetuer.</h3></div>
        </div>
 	<br><br>
        <div class="row">
-          <div class=" col-md-6">Lorem ipsum dolor sit amet, semper diam commodo porttitor lectus eleifend, tellus et fermentum a, non phasellus turpis vitae. Risus gravida tortor velit nibh, donec nulla natus fermentum quam sed mauris, magna ipsum eu rhoncus in turpis consectetuer, pede ipsum viverra nec. Sem urna ut at orci, pellentesque nulla et maecenas et. Vel vitae vestibulum, pede elit purus vel. Neque vel proin quisquam molestie volutpat sit, pellentesque erat proin laoreet, a ut in. Lobortis donec volutpat, fames vehicula risus eros tellus, ipsum in. Integer scelerisque a dolor elit felis.<br><br>
+          <div class=" col-md-6">Lorem ipsum dolor sit amet, semper diam commodo porttitor lectus eleifend, tellus et fermentum a, non phasellus turpis vitae. Risus gravida tortor velit nibh, donec nulla natus fermentum quam sed mauris, magna ipsum eu rhoncus in turpis consectetuer, pede ipsum viverra nec. Sem urna ut at orci, pellentesque nulla et maecenas et. Vel vitae vestibulum, pede elit purus vel. Neque vel proin quisquam molestie volutpat sit, pellentesque erat proin laoreet, a ut in. Lobortis donec volutpat, fames vehicula risus eros tellus, ipsum in. Integer scelerisque a dolor elit felis.<br><br><br>
 		   
 		  Lorem ipsum dolor sit amet, semper diam commodo porttitor lectus eleifend, tellus et fermentum a, non phasellus turpis vitae. Risus gravida tortor velit nibh, donec nulla natus fermentum quam sed mauris, magna ipsum eu rhoncus in turpis consectetuer, pede ipsum viverra nec. Sem urna ut at orci, pellentesque nulla et maecenas et. Vel vitae vestibulum, pede elit purus vel. Neque vel proin quisquam molestie volutpat sit, pellentesque erat proin laoreet, a ut in. Lobortis donec volutpat, fames vehicula risus eros tellus, ipsum in. Integer scelerisque a dolor elit felis.</div>
 		   
           <div class="col-md-6">Lorem ipsum dolor sit amet, semper diam commodo porttitor lectus eleifend, tellus et fermentum a, non phasellus turpis vitae. Risus gravida tortor velit nibh, donec nulla natus fermentum quam sed mauris, magna ipsum eu rhoncus in turpis consectetuer, pede ipsum viverra nec.
 		  <br><br>
-		  <form id="myForm" action="https://s2331.t.eloqua.com/e/f2" method="post">
-			  	<input type="hidden" name="elqFormName" value="giv-mig-praktikplads">
+	      <!-- action="https://s2331.t.eloqua.com/e/f2 -->
+		  <form name="RegForm" action="https://www.nordlid.com" onsubmit="return myForm()" method="post">  
+      			<input type="hidden" name="elqFormName" value="giv-mig-praktikplads">
 				<input type="hidden" name="elqSiteID" value="2331">
-  				<div class="form-group">
+    			<div class="form-group">
   				  <label for="fullName">Navn</label>
-  				  <input type="name" class="form-control" id="fullName" placeholder="Indtast navn" required>
+				  <input type="text" name="fullName" class="form-control" id="fullName" placeholder="Indtast navn" required>
   				</div>
 			    <div class="form-group">
  				   <label for="emailAddress">Email</label>
-  				  <input type="email" class="form-control" id="emailAddress" aria-describedby="emailHelp" placeholder="Indtast email adressen" required>
+				   <input type="email" name="emailAddress" class="form-control" id="emailAddress" placeholder="Indtast din email adresse" required>
   				</div>
 			    <div class="form-group">
  				   <label for="mobilePhone">Tlf</label>
-  				  <input type="number" class="form-control" id="mobilePhone" aria-describedby="phoneHelp" placeholder="Indtast dit tlf. nummer" required>
-  				</div>
-  				<div class="form-group form-check">
-  				  <input type="checkbox" class="form-check-input" id="permission" required>
-  				  <label class="form-check-label" for="exampleCheck1">Jeg giver hermed tilladelse til, at Nordlið må gemme og bruge mine data til interne projekter. Jeg kan til hver en tid tilbagekalde min accept.</label>
-  				</div>
-  				<button type="submit" class="btn btn-primary">Send</button>
-		  </form>
+				   <input type="number" name="mobilePhone" class="form-control" id="mobilePhone" placeholder="Indtast dit tlf. nummer" required>
+  				</div>   
+			    <div class="custom-control custom-checkbox">
+  					<input type="checkbox" class="custom-control-input" id="permission" required>
+  					<label class="custom-control-label checkbox-text" for="permission"><h6>Jeg giver hermed tilladelse til, at Nordlið må gemme og bruge mine data til interne projekter. Jeg kan til hver en tid tilbagekalde min accept.</h6></label>
+				</div><br>
+    			<button type="submit" class="btn btn-primary btn-block" value="send" name="Submit">Send</button>         
+		  </form> 
 	      </div>
        </div>
 	</div>
@@ -92,7 +94,7 @@
           <div class="col-md-4 col-12">
             <ul class="list-unstyled">
               <li class="media">
-                <img class="mr-3" src="images/icon-light-bulb.jpg" alt="Generic placeholder image">
+                <img class="mr-3" src="images/icon-light-bulb.png" alt="Generic placeholder image">
                 <div class="media-body">
                   <h5 class="mt-0 mb-1">List-based media object</h5>
                   Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin.
@@ -103,7 +105,7 @@
           <div class="col-md-4 col-12">
             <ul class="list-unstyled">
               <li class="media">
-                <img class="mr-3" src="images/icon-speech-bubble.jpg" alt="Generic placeholder image">
+                <img class="mr-3" src="images/icon-speech-bubble.png" alt="Generic placeholder image">
                 <div class="media-body">
                   <h5 class="mt-0 mb-1">List-based media object</h5>
                   Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin.
@@ -114,7 +116,7 @@
           <div class="col-md-4 col-12">
             <ul class="list-unstyled">
               <li class="media">
-                <img class="mr-3" src="images/icon-gold-medal.jpg" alt="Generic placeholder image">
+                <img class="mr-3" src="images/icon-gold-medal.png" alt="Generic placeholder image">
                 <div class="media-body">
                   <h5 class="mt-0 mb-1">List-based media object</h5>
                   Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin.
@@ -125,7 +127,6 @@
         </div>
       </div>
     </section>
-	<br><br>
     <div class="section footer">
       <div class="container">
         <div class="row">

@@ -1,6 +1,14 @@
 @charset "utf-8";
 /* CSS Document */
 
+body {
+	font-family: 'Raleway', sans-serif;
+}
+
+h3 {
+	font-weight: 300;
+}
+
 .bluesection {
   	background-color: rgb(42, 105, 123);
 	color:white;
@@ -18,4 +26,22 @@
 .btn {
 	background-color: #cd0171;
 	color: white;
+	border-radius: 0;
+	border: none;
+}
+
+.btn:hover {
+	background-color: #A30059;
+	color: white;
+	border-radius: 0;
+	border: none;
+}
+
+#permission {
+	background-color: #cd0171;
+}
+
+checked+label:before {
+    border-right: 2px solid #fff;
+    border-bottom: 2px solid #fff;
 }
