@@ -28,7 +28,6 @@ img {
 	padding: 0 0;
 }
 
-
 .carousel-item img{
 	max-height: 440px;
 }
@@ -116,12 +115,25 @@ img {
 
 
 @media (max-width: 768px) { 
-	img {
-		height: 400;
+	#first {
+		order: 2;
+	}
+	#second {
+		order: 1;
+	}
+	
+	.header .w-100 {
+		height: 300px;
 	} 
+	.header {
+		height: 300px;
+	} 
+	.carousel-caption {
+	padding-bottom: 60px;
+	}
 	
 	.header-text {
-		font-size: 90%;
+		font-size: 100%;
 	}
 	
 }
