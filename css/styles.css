@@ -1,10 +1,11 @@
 @charset "utf-8";
 /* CSS Document */
-
+/* Adding font to site */
 body {
 	font-family: 'Raleway', sans-serif;
 }
-
+/* Adding font to site END  */
+/* Adding styling to headings */
 h3 {
 	font-weight: 300;
 }
@@ -12,11 +13,13 @@ h3 {
 h5 {
 	font-weight: 200;
 }
-
+/* Adding styling to headings END */
+/* Adding styling to checkbox text */
 .permission-text {
 	font-size: 80%;
 }
-
+/* Adding styling to checkbox text END */
+/* Adding styling to Header area, including slider */
 img {
 	max-width: 100%;
 	height: auto;
@@ -35,11 +38,13 @@ img {
 .carousel-caption {
 	padding-bottom: 130px;
 }
-
+/* Adding styling to Header area, inlcuding slider END */
+/* Adding styling to navbar */
 .brandname {
 	font-weight: 300;
 }
-
+/* Adding styling to navbar END */
+/* Adding styling to checkbox */
 .checkbox-text {
 	font-weight: 200;
 }
@@ -65,7 +70,8 @@ img {
 .custom-checkbox .custom-control-input:checked~.custom-control-label::after{
   background-image:url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3E%3Cpath fill='#cd0171' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3E%3C/svg%3E");
 }
-
+/* Adding styling to checkbox END */
+/* Adding styling to blue section */
 .bluesection {
   	display: inline;
 	background-color: #2a697b;
@@ -73,8 +79,8 @@ img {
   	height: auto;
 	align-content: center;
 }
-
-
+/* Adding styling to blue section END */
+/* Adding styling to Footer */
 .footer {
 	display: inline-block;
 	background-color: #313131;
@@ -83,7 +89,8 @@ img {
 	padding-top: 0;
 	height: auto;
 }
-
+/* Adding styling to Footer END */
+/* Adding styling to Form button */
 .btn {
 	background-color: #cd0171;
 	color: white;
@@ -97,12 +104,14 @@ img {
 	border-radius: 0;
 	border: none;
 }
-
+/* Adding styling to Form button END */
+/* Rearranging social media icon in footer */
 .social {
 	display: inline-flex;
 	text-align: center;
 }
-
+/* Rearranging social media icon in footer END */
+/* Adding styling to Form input fields */
 .form-control {
 	border-bottom-style: solid;
 	border-bottom-width: thin;
@@ -112,8 +121,8 @@ img {
 	border-bottom-color: black;
 	border-radius: 0px;
 }
-
-
+/* Adding styling to Form input fields END */
+/* Adding Mobile friendly stylings */
 @media (max-width: 768px) { 
 	#first {
 		order: 2;
@@ -141,5 +150,5 @@ img {
 	}
 	
 }
-
+/* Adding Mobile friendly stylings END */
 

@@ -1,4 +1,4 @@
-// JavaScript Document
+// JavaScript Form Validation
 
 function myForm() { 
     var name = document.forms["RegForm"]["fullName"];               
