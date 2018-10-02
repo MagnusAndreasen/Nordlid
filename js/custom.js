@@ -1,42 +1,35 @@
 // JavaScript Document
 
-function myForm()                                    
-{ 
+function myForm() { 
     var name = document.forms["RegForm"]["fullName"];               
     var email = document.forms["RegForm"]["emailAddress"];    
     var phone = document.forms["RegForm"]["mobilePhone"]; 
-	var check = document.forms ["RegForm"] ["permission"];
    
-    if (name.value == "")                                  
-    { 
+    if (name.value == "") { 
         window.alert("Please enter your name."); 
         name.focus(); 
         return false; 
     }  
        
-    if (email.value == "")                                   
-    { 
+    if (email.value == "") { 
         window.alert("Please enter a valid e-mail address."); 
         email.focus(); 
         return false; 
     } 
    
-    if (email.value.indexOf("@", 0) < 0)                 
-    { 
+    if (email.value.indexOf("@", 0) < 0) { 
         window.alert("Please enter a valid e-mail address."); 
         email.focus(); 
         return false; 
     } 
    
-    if (email.value.indexOf(".", 0) < 0)                 
-    { 
+    if (email.value.indexOf(".", 0) < 0) { 
         window.alert("Please enter a valid e-mail address."); 
         email.focus(); 
         return false; 
     } 
    
-    if (phone.value == "")                           
-    { 
+    if (phone.value == "") { 
         window.alert("Please enter your telephone number."); 
         phone.focus(); 
         return false; 
